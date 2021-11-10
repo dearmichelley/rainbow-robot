@@ -45,7 +45,7 @@ h1 {
 } 
 
 .eyes {
-	
+	display: flex;
 }
 
 .head:hover {
