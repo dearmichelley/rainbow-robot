@@ -3,7 +3,7 @@ h1 {
 	font-family: 'Roboto', sans-serif;
 }
 
-.robots: {
+.android {
 }
 
 .head, 
@@ -21,11 +21,12 @@ h1 {
 .right_arm:hover, 
 .left_leg:hover, 
 .right_leg:hover {
-	animation: rainbow 2s infinite;
+	animation: rainbow 1s infinite;
+	animation-direction: alternate-reverse;
 }
 
 @keyframes rainbow {
-	0%	{background-color: #FF847C;}
+	0%	{background-image: #FF847C;}
 	14%	{background-color: #F2D694;}
 	28%	{background-color: #99B898;}
 	42%	{background-color: #86B8B1;}
@@ -69,9 +70,25 @@ h1 {
 	margin-right: 10px; 
 } 
 
+.left_arm:hover {
+	-webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
 .right_arm { 
 	margin-left: 10px; 
 } 
+
+.right_arm:hover {
+	-webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
 
 .torso { 
 	width: 200px; 
@@ -108,6 +125,14 @@ h1 {
 
 .right_leg { 
 	margin-left: 30px; 
+}
+
+.right_leg:hover {
+	-webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    transform: rotate(-20deg);
 }
 
 .left_eye, .right_eye { 
